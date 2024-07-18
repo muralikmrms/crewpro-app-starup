@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: "20.11.1" # Specify the Node.js version required by Angular CLI
+          node-version: "22.0.0" # Specify the Node.js version required by Angular CLI
       - name: Install dependencies
         run: npm install
       - name: Build And Deploy
@@ -39,7 +39,7 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist/crewpro-app-starup/browser" # Built app content directory - optional
           app_build_command: "npm run build"
-          node-version: "20.11.1"
+          node-version: "22.0.0"
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
