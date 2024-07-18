@@ -23,13 +23,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20" # Specify the Node.js version required by Angular CLI
-      - name: Verify Node.js version
-        run: node -v
       - name: Install dependencies
         run: npm install
-      - name: Build the application
-        run: npm run build
-      - name: Deploy to Azure Static Web Apps
+      - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
