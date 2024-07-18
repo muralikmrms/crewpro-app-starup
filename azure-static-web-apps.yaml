@@ -2,4 +2,4 @@ app_location: "/"
 api_location: ""
 output_location: "dist/crewpro-app-starup/browser"
 app_build_command: "npm run build"
-node_version: "20.11.1" # Specify the Node.js version required by Angular CLI
+node_version: "20" # Specify the Node.js version required by Angular CLI
