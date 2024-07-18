@@ -19,6 +19,13 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Specify the Node.js version required by Angular CLI
+
+      - name: Install dependencies
+        run: npm install
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
